@@ -23,14 +23,19 @@ a {
 	margin-inline: auto;
 }
 
-section {
-	padding-bottom: 90px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-
-	// @include mobile{
-	// 	padding-bottom: 55px;
-	// }
+.title {
+    padding-bottom: 50px;
+	border-bottom: 1px solid rgba(255, 0, 0,);
 }
+
+// section {
+// 	padding-bottom: 90px;
+// 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+// 	// @include mobile{
+// 	// 	padding-bottom: 55px;
+// 	// }
+// }
 
 
 // .btn {
