@@ -140,16 +140,20 @@ ul {
   background-size: cover;
   aspect-ratio: 1920/1080;
 }
-.header__li {
+.header__container {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
 }
 .header__ul {
   display: flex;
   gap: 20px;
 }
-
+.header__li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 .active {
   display: block;
   border-radius: 50%;
@@ -162,4 +166,34 @@ ul {
 
 .hiden {
   display: none;
+}
+
+html._overflow {
+  overflow: hidden;
+}
+html._overflow body {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 20px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+section {
+  padding-bottom: 90px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+* ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #d1d1d1;
 }/*# sourceMappingURL=main.css.map */

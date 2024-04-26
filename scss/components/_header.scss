@@ -1,21 +1,36 @@
 .header {
-    background-image: url("./../img/main-bg.png");
-    background-size: cover;
-    aspect-ratio: 1920 / 1080;
+  background-image: url("./../img/main-bg.png");
+  background-size: cover;
+  aspect-ratio: 1920 / 1080;
 
-    &__li{
-        display: flex;
+  &__container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+  }
+
+  &__ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__li {
+    display: flex;
     align-items: center;
 
     position: relative;
-    }
+  }
 
-    &__ul{
-        display: flex;
-    gap: 20px;
-    }
+  &__link {
+  }
 }
-
 
 .active {
     display: block;
@@ -23,12 +38,12 @@
     width: 6px;
     height: 6px;
     background: black;
-
+  
     position: absolute;
     left: -10px;
-
-}
-
-.hiden {
+  }
+  
+  .hiden {
     display: none;
-}
+  }
+
