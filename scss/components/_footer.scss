@@ -1,10 +1,7 @@
 .footer {
-  &__container{
+  &__container {
     display: grid;
-    grid-template-columns: 2fr 4.5fr 1.5fr 2fr;
-  }
-
-  &__logo {
+    grid-template-columns: 2fr 4.5fr 2fr 1.5fr;
   }
 
   &__ul {
@@ -14,17 +11,15 @@
     gap: 20px;
   }
 
-  &__li {
-  }
-
   &__link {
-    color: rgb(38, 35, 35);
+    color: var(--c-link);
     font-size: 18px;
     line-height: 155%;
     letter-spacing: 0.7px;
   }
 
   &__btn {
+    max-width: 217px;
     grid-column-start: 4;
   }
 }

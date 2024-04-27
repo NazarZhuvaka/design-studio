@@ -272,19 +272,13 @@ html._overflow body {
 }
 
 .btn {
-  display: inline-block;
-  cursor: pointer;
-  outline: 0;
-  border: 0;
-  border-radius: 5px;
-  padding: 13px 18px;
-  transition: var(--transition);
-}
-.btn_primary {
-  background: var(--c-primary);
-}
-.btn_primary:hover {
-  background: #d48902;
+  color: var(--c-link);
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: 0.7px;
+  border: 1px solid var(--c-link);
+  background: none;
+  border-radius: 32px;
 }
 
 .desc {
@@ -334,7 +328,7 @@ html._overflow body {
 
 .footer__container {
   display: grid;
-  grid-template-columns: 2fr 4.5fr 1.5fr 2fr;
+  grid-template-columns: 2fr 4.5fr 2fr 1.5fr;
 }
 .footer__ul {
   display: grid;
@@ -343,11 +337,17 @@ html._overflow body {
   gap: 20px;
 }
 .footer__link {
-  color: rgb(38, 35, 35);
+  color: var(--c-link);
   font-size: 18px;
   line-height: 155%;
   letter-spacing: 0.7px;
 }
 .footer__btn {
+  max-width: 217px;
   grid-column-start: 4;
+}
+
+.steps__photos {
+  display: flex;
+  gap: 34px;
 }/*# sourceMappingURL=main.css.map */
