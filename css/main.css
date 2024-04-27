@@ -311,6 +311,7 @@ html._overflow body {
   grid-template-columns: 2.5fr 3fr 3fr 0.5fr;
   gap: 40px;
   margin-top: 50px;
+  margin-bottom: 170px;
 }
 .cost__text {
   color: rgb(66, 65, 65);
@@ -351,6 +352,10 @@ html._overflow body {
   display: grid;
   grid-template-columns: 2.5fr 3fr 0.5fr 3fr;
   grid-template-rows: 1fr 1fr;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  grid-row-gap: 20px;
+  grid-column-gap: 15px;
 }
 .steps__block:nth-child(1) {
   grid-column-start: 2;
@@ -382,4 +387,5 @@ html._overflow body {
 .steps__photos {
   display: flex;
   gap: 34px;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=main.css.map */
