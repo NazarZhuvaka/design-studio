@@ -330,4 +330,24 @@ html._overflow body {
 }
 .cost #cost__text2 {
   max-width: 419px;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 2fr 4.5fr 1.5fr 2fr;
+}
+.footer__ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.footer__link {
+  color: rgb(38, 35, 35);
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: 0.7px;
+}
+.footer__btn {
+  grid-column-start: 4;
 }/*# sourceMappingURL=main.css.map */

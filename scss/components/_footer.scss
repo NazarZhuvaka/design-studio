@@ -1,0 +1,30 @@
+.footer {
+  &__container{
+    display: grid;
+    grid-template-columns: 2fr 4.5fr 1.5fr 2fr;
+  }
+
+  &__logo {
+  }
+
+  &__ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__li {
+  }
+
+  &__link {
+    color: rgb(38, 35, 35);
+    font-size: 18px;
+    line-height: 155%;
+    letter-spacing: 0.7px;
+  }
+
+  &__btn {
+    grid-column-start: 4;
+  }
+}
