@@ -1,30 +1,5 @@
 .steps {
 
-    &__info {
-        display: grid;
-        grid-template-columns: 2.5fr 3fr 0.5fr 3fr;
-        grid-template-rows: 1fr 1fr;
-
-        margin-top: 60px;
-        margin-bottom: 100px;
-
-        grid-row-gap: 20px;
-        grid-column-gap: 15px;
-    }
-
-    &__block:nth-child(1) {
-        grid-column-start: 2;
-    }
-    &__block:nth-child(2) {
-        grid-column-start: 4;
-    }
-    &__block:nth-child(3) {
-        grid-column-start: 2;
-    }
-    &__block:nth-child(4) {
-        grid-column-start: 4;
-    }
-
     &__info-title {
         color: black;
         font-size: 24px;
@@ -56,6 +31,8 @@
         @include desktop-small {
             flex-direction: column;
             text-align: center;
+
+            gap: 20px;
         }
     }
 }

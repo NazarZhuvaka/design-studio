@@ -26,6 +26,10 @@ html._overflow {
 	letter-spacing: 0.9px;
 	max-width: 622px;
 
+	@include tablet-small {
+		margin-top: 70px;
+	}
+
 &__underline{
 	display: block;
 	padding-bottom: 50px;
@@ -77,18 +81,33 @@ html._overflow {
 
 	grid-row-gap: 20px;
 	grid-column-gap: 15px;
+
+	@include desktop-small{
+		grid-template-columns: 3fr 3fr;
+	}
+
+	@include tablet-small {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
 }
 
 .block:nth-child(1) {
-	grid-column-start: 2;
+	grid-column-start: 1;
 }
 .block:nth-child(2) {
-	grid-column-start: 4;
+	grid-column-start: 2;
+	@include tablet-small {
+		grid-column-start: 1;
+	}
 }
 .block:nth-child(3) {
-	grid-column-start: 2;
+	grid-column-start: 1;
 }
 .block:nth-child(4) {
-	grid-column-start: 4;
+	grid-column-start: 2;
+	@include tablet-small {
+		grid-column-start: 1;
+	}
 }
 
