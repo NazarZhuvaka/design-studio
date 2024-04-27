@@ -335,7 +335,7 @@ html._overflow body {
 .cost__info {
   display: grid;
   grid-template-columns: 2.5fr 3fr 3fr 0.5fr;
-  gap: 40px;
+  gap: 48px;
   margin-top: 50px;
   margin-bottom: 170px;
 }
@@ -400,15 +400,18 @@ html._overflow body {
   font-size: 24px;
   font-weight: 300;
   line-height: 155%;
-  letter-spacing: 0.7;
+  letter-spacing: 0.7px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 .steps__info-text {
   color: rgb(66, 65, 65);
   font-size: 20px;
   font-weight: 300;
   line-height: 155%;
-  letter-spacing: 0.7;
+  letter-spacing: 0.7px;
 }
 .steps__photos {
   display: flex;
@@ -422,4 +425,21 @@ html._overflow body {
 
 .style__info {
   grid-template-rows: 1fr;
+  gap: 0px;
+}
+
+.style__block:nth-child(1) {
+  max-width: 450px;
+}
+
+.style__block:nth-child(2) {
+  max-width: 399px;
+}
+
+.answers-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: black;
 }/*# sourceMappingURL=main.css.map */

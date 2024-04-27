@@ -4,4 +4,14 @@
 
 .style__info{
     grid-template-rows: 1fr ;
+    gap: 0px;
+
+    
+}
+
+.style__block:nth-child(1){
+    max-width: 450px;
+}
+.style__block:nth-child(2){
+    max-width: 399px;
 }
