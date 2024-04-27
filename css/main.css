@@ -295,6 +295,32 @@ html._overflow body {
   }
 }
 
+.info {
+  display: grid;
+  grid-template-columns: 2.5fr 3fr 0.5fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  grid-row-gap: 20px;
+  grid-column-gap: 15px;
+}
+
+.block:nth-child(1) {
+  grid-column-start: 2;
+}
+
+.block:nth-child(2) {
+  grid-column-start: 4;
+}
+
+.block:nth-child(3) {
+  grid-column-start: 2;
+}
+
+.block:nth-child(4) {
+  grid-column-start: 4;
+}
+
 *::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -388,4 +414,12 @@ html._overflow body {
   display: flex;
   gap: 34px;
   margin-bottom: 100px;
+}
+
+.style__title {
+  margin-top: 167px;
+}
+
+.style__info {
+  grid-template-rows: 1fr;
 }/*# sourceMappingURL=main.css.map */
