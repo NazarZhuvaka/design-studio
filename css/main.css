@@ -442,4 +442,31 @@ html._overflow body {
   height: 8px;
   border-radius: 50%;
   background: black;
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: 3fr 3.5fr 4fr;
+  grid-auto-rows: 1fr 1fr;
+}
+.welcome__title {
+  grid-column-start: 2;
+  color: rgb(38, 35, 35);
+  font-size: 90px;
+  line-height: 155%;
+  letter-spacing: 0.7px;
+}
+.welcome__info {
+  grid-row-start: 2;
+  grid-column-start: 3;
+}
+.welcome__info-text {
+  color: rgb(38, 35, 35);
+  font-size: 20px;
+  line-height: 155%;
+  letter-spacing: 0.7px;
+  margin-bottom: 34px;
+}
+.welcome__btn {
+  padding: 14px 53px;
 }/*# sourceMappingURL=main.css.map */
