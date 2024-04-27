@@ -9,15 +9,9 @@
     justify-content: space-between;
   }
 
-  &__logo {
-  }
-
-  &__nav {
-  }
-
   &__ul {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     z-index: 1;
 
     @include tablet {

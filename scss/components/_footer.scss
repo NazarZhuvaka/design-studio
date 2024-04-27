@@ -2,6 +2,11 @@
   &__container {
     display: grid;
     grid-template-columns: 2fr 4.5fr 2fr 1.5fr;
+    @include desktop-small{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__ul {
@@ -9,6 +14,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 20px;
+
+    @include desktop-small{
+      display: none;
+    }
   }
 
   &__link {
@@ -19,7 +28,7 @@
   }
 
   &__btn {
-    max-width: 217px;
+    // max-width: 217px;
     grid-column-start: 4;
   }
 }
