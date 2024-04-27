@@ -11,21 +11,24 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/main.css" />
 
     <title>Project</title>
   </head>
   <body>
-
     <header class="header">
-      
       <div class="container header__container">
         <a href="">
           <img class="header__logo" src="./img/svg/logo.svg" alt="logo" />
         </a>
 
         <nav class="header__nav">
-          <ul class="header__ul">
+          <ul class="header__ul" id="headerUl">
             <li class="header__li">
               <span class="active" data-tab-content id="tab-1"></span>
               <a class="header__link" href="#!" data-tab="tab-1">Home</a>
@@ -46,12 +49,30 @@
               <span class="active hiden" data-tab-content id="tab-5"></span>
               <a class="header__link" href="#!" data-tab="tab-5">Contacts</a>
             </li>
-          </ul>
-        </nav>
 
+            <span class="material-icons icon-close" onclick="navToggle()"
+              >close</span
+            >
+          </ul>
+
+          <span class="header__backdrop" onclick="navToggle()"></span>
+          <span class="material-icons icon-menu" onclick="navToggle()"
+            >menu</span
+          >
+        </nav>
       </div>
 
+      <div class="welcome">
+        <h1 class="welcome__title">Interior design studio</h1>
 
+        <div>
+          <p>
+            In our interior design studio, we craft unique spaces, bringing your
+            dreams of the perfect home to life.
+          </p>
+          <button>sdadsa</button>
+        </div>
+      </div>
     </header>
 
     <section class="style">
@@ -60,8 +81,79 @@
           The style of your home or apartment is in good hands
         </h2>
 
+        <span class="title__underline"></span>
       </div>
     </section>
+
+    <section class="answers">
+      <div class="container answers__container">
+        <h2 class="title answers__title">Why choose us</h2>
+
+        <span class="title__underline"></span>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="container steps__container">
+        <h2 class="title steps__title">Steps to work with us</h2>
+
+        <span class="title__underline"></span>
+      </div>
+    </section>
+
+    <section class="cost">
+      <div class="container cost__container">
+        <h2 class="title cost__title">Cost calculation and payment</h2>
+
+        <span class="title__underline"></span>
+
+        <div class="cost__info"> 
+          <p class="cost__text" id="cost__text">
+            Our process of cost estimation and payment proceeds in several stages
+            to ensure transparency and client comfort. Initially, our specialists
+            conduct a detailed assessment of all project aspects, considering the
+            scope of work, selected materials, and potential additional services.
+            Based on this assessment, a detailed estimate is prepared, breaking
+            down all expenses clearly.
+          </p>
+          <p class="cost__text" id="cost__text2">
+            After presenting the estimate, we discuss and approve the final
+            project budget with the client, taking into account all their
+            preferences and capabilities.Subsequently, we offer flexible payment
+            terms, dividing the total sum into several stages according to the
+            progress of work. Clients can choose a payment schedule that suits
+            them best, ensuring comfortable and secure financial management
+            throughout the project.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./img/svg/logo.svg" alt="footer-logo" />
+      </div>
+
+      <ul class="footer__ul">
+        <li class="footer__li">
+          <a class="footer__link" href="#!">Home</a>
+        </li>
+        <li class="footer__li">
+          <a class="footer__link" href="#!">Portfolio</a>
+        </li>
+        <li class="footer__li">
+          <a class="footer__link" href="#!">About Us</a>
+        </li>
+        <li class="footer__li">
+          <a class="footer__link" href="#!">Reviews</a>
+        </li>
+        <li class="footer__li">
+          <a class="footer__link" href="#!">Contacts</a>
+        </li>
+      </ul>
+
+      <button class="btn footer__btn">Order a project</button>
+    </footer>
 
     <script src="./script.js"></script>
   </body>
