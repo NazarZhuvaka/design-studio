@@ -383,6 +383,7 @@ html._overflow body {
   letter-spacing: 0.7px;
 }
 .footer__btn {
+  font-size: 14px;
   grid-column-start: 4;
 }
 
@@ -429,6 +430,12 @@ html._overflow body {
   display: flex;
   gap: 34px;
   margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .steps__photos {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .style__title {

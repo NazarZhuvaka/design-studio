@@ -52,6 +52,11 @@
         gap: 34px;
 
         margin-bottom: 100px;
+
+        @include desktop-small {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 }
 
