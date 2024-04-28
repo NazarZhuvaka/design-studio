@@ -197,6 +197,22 @@ ul {
   color: var(--c-link);
   font-size: 20px;
   letter-spacing: 0.7px;
+  position: relative;
+}
+.header__link::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  background: var(--c-body);
+  transform: translateX(-50%);
+  transition: var(--transition);
+  left: 50%;
+}
+.header__link:hover:after {
+  width: 100%;
 }
 .header__backdrop {
   display: none;
